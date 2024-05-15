@@ -54,11 +54,11 @@ multi-step-form-app/
 ### Installation
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/multi-step-form-app.git
+    git clone https://github.com/jainritik626/multi-step-react-form.git
     ```
 2. Navigate to the project directory:
     ```sh
-    cd multi-step-form-app
+    cd MULTI-STEP-LOAN-FORM
     ```
 3. Install the dependencies:
     ```sh
@@ -72,11 +72,7 @@ multi-step-form-app/
 ## Running the Application
 1. Start the development server:
     ```sh
-    npm start
-    ```
-    or
-    ```sh
-    yarn start
+    npm run dev
     ```
 2. Open your browser and navigate to `http://localhost:3000` to see the application running.
 
@@ -120,12 +116,16 @@ The application is designed to be scalable, maintainable, and modular. Here’s 
 ### Hooks
 - **useMultiStepForm**: A custom hook that manages the multi-step form logic, including navigation between steps and handling form completion.
 
+### Forms
+- **Formik**: currently we are using basic Html form for faster development and easily understandable, we can also use Formik for better error handling and to get access to validations libraries like **Yup**
+
 ### State Management
 - **useState**: The React `useState` hook is used to manage the form data and the state of the application (loading, completed).
 - **localStorage**: Used to persist form data and the current step index to handle page refreshes.
 
 ### Styling
 - **CSS**: The application uses a CSS file (`App.css`) to style the components, ensuring a clean and consistent user interface.
+- **Chakra UI**: we can also use UI Libraries like Chakra UI, shadcn UI etc for faster development process.
 
 ### Persistence
 - **localStorage**: Form data and the current step index are stored in localStorage to ensure that the user can resume their progress even after a page refresh.
