@@ -60,7 +60,7 @@ multi-step-form-app/
     ```
 2. Navigate to the project directory:
     ```sh
-    cd MULTI-STEP-LOAN-FORM
+    cd multi-step-react-form
     ```
 3. Install the dependencies:
     ```sh
@@ -79,7 +79,7 @@ multi-step-form-app/
 2. Open your browser and navigate to `http://localhost:3000` to see the application running.
 
 ## Testing
-Currently, the project does not include a testing setup. However, you can add testing using frameworks like Jest and React Testing Library. Here's a basic setup guide:
+Currently, the project does not include a testing setup. However, we can add testing using frameworks like Jest and React Testing Library. Here's a basic setup guide:
 
 1. Install Jest and React Testing Library:
     ```sh
