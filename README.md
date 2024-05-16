@@ -90,8 +90,6 @@ multi-step-form-app/
 ## Testing
 Currently, the project does not include a testing setup. However, we can add testing using frameworks like Jest and React Testing Library. Here's a basic setup guide:
 
-Sure, here's the updated version of the testing section in your README, tailored for TypeScript projects:
-
 ## Testing
 
 Testing is an essential part of ensuring the reliability and stability of your TypeScript project. We can utilize popular testing frameworks like Jest along with React Testing Library for testing React components. Follow these steps to set up testing in your project:
@@ -146,7 +144,7 @@ Testing is an essential part of ensuring the reliability and stability of your T
       verbose: true,
     };
 
-By following these steps, you can ensure that your TypeScript project is thoroughly tested, helping to catch bugs early and maintain code quality throughout development.
+By following these steps, we can ensure that your TypeScript project is thoroughly tested, helping to catch bugs early and maintain code quality throughout development.
 
 ## System Design and Architecture
 The application is designed to be scalable, maintainable, and modular. Here’s an overview of the system design and architecture:
