@@ -26,12 +26,21 @@ multi-step-form-app/
 │   ├── index.html
 │   └── ...
 ├── src/
+│   ├── tests/
+│   │   ├── BankForm.tests.tsx
+│   │   ├── BusinessForm.tests.tsx
+│   │   ├── IndividualForm.tests.tsx
+│   │   ├── SuccessScreen.tests.tsx
+│   │   ├── WaitingScreen.tests.tsx
+│   │   ├── Stepper.tests.tsx
+│   │  
 │   ├── components/
 │   │   ├── BankForm.tsx
 │   │   ├── BusinessForm.tsx
 │   │   ├── IndividualForm.tsx
 │   │   ├── SuccessScreen.tsx
 │   │   ├── WaitingScreen.tsx
+│   │   ├── Stepper.tsx
 │   │
 │   ├── hooks/
 │   │   └── useMultiStepForm.ts
@@ -81,25 +90,43 @@ multi-step-form-app/
 ## Testing
 Currently, the project does not include a testing setup. However, we can add testing using frameworks like Jest and React Testing Library. Here's a basic setup guide:
 
-1. Install Jest and React Testing Library:
+Sure, here's the updated version of the testing section in your README, tailored for TypeScript projects:
+
+## Testing
+
+Testing is an essential part of ensuring the reliability and stability of your TypeScript project. We can utilize popular testing frameworks like Jest along with React Testing Library for testing React components. Follow these steps to set up testing in your project:
+
+1. **Install Jest, React Testing Library, and TypeScript support**:
     ```sh
-    npm install --save-dev jest @testing-library/react @testing-library/jest-dom
+    npm install --save-dev jest @testing-library/react @testing-library/jest-dom @types/jest @types/testing-library__react
     ```
     or
     ```sh
-    yarn add --dev jest @testing-library/react @testing-library/jest-dom
+    yarn add --dev jest @testing-library/react @testing-library/jest-dom @types/jest @types/testing-library__react
     ```
 
-2. Add a test script to `package.json`:
+2. **Configure TypeScript for Jest**:
+    Ensure TypeScript works smoothly with Jest by adding a `jest.config.js` file at the root of your project:
+    ```javascript
+    // jest.config.js
+    module.exports = {
+      preset: 'ts-jest',
+      testEnvironment: 'node',
+    };
+    ```
+
+3. **Add a test script to `package.json`**:
     ```json
     "scripts": {
       "test": "jest"
     }
     ```
 
-3. Create a test file, e.g., `App.test.tsx`, and write your tests.
+4. **Write your tests**:
+    Create test files with the `.test.tsx` extension alongside your source files. For example, if you have a component named `App.tsx`, create a corresponding test file named `App.test.tsx` in the same directory. Write your tests using Jest and React Testing Library.
 
-4. Run the tests:
+5. **Run the tests**:
+    Execute the following command to run your tests:
     ```sh
     npm test
     ```
@@ -107,6 +134,19 @@ Currently, the project does not include a testing setup. However, we can add tes
     ```sh
     yarn test
     ```
+6. **Create Jest configuration file**:
+    To further customize Jest settings, create a `jest.config.ts` file at the root of your project with the following content:
+    ```typescript
+    // jest.config.ts
+    import type { Config } from '@jest/types';
+
+    const config: Config.InitialOptions = {
+      preset: 'ts-jest',
+      testEnvironment: 'node',
+      verbose: true,
+    };
+
+By following these steps, you can ensure that your TypeScript project is thoroughly tested, helping to catch bugs early and maintain code quality throughout development.
 
 ## System Design and Architecture
 The application is designed to be scalable, maintainable, and modular. Here’s an overview of the system design and architecture:
@@ -135,6 +175,9 @@ The application is designed to be scalable, maintainable, and modular. Here’s 
 ### Scalability
 - The application is designed to be easily extendable. Adding new steps to the form or modifying existing ones is straightforward.
 - The use of custom hooks and modular components makes the system easy to maintain and update.
+
+###ESLint
+- we have enable eslint for a consistent development code across teams 
 
 By following these design principles, the application remains robust, scalable, and easy to maintain.
 
