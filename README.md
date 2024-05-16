@@ -88,9 +88,6 @@ multi-step-form-app/
 2. Open your browser and navigate to `http://localhost:3000` to see the application running.
 
 ## Testing
-Currently, the project does not include a testing setup. However, we can add testing using frameworks like Jest and React Testing Library. Here's a basic setup guide:
-
-## Testing
 
 Testing is an essential part of ensuring the reliability and stability of your TypeScript project. We can utilize popular testing frameworks like Jest along with React Testing Library for testing React components. Follow these steps to set up testing in your project:
 
