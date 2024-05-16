@@ -7,6 +7,7 @@ import SuccessScreen from "./components/SuccessScreen";
 import WaitingScreen from "./components/WaitingScreen";
 import "./App.css";
 import { FormData, INITIAL_DATA } from "./types";
+import { Stepper } from "./components/stepper";
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
@@ -73,10 +74,8 @@ function App() {
         <SuccessScreen />
       ) : (
         !isLoading && (
-          <form onSubmit={onSubmit}>
-            <div className="step-indicator">
-              {currentStepIndex + 1} / {steps.length}
-            </div>
+          <form onSubmit={onSubmit} className="form">
+            <Stepper steps={steps} currentStepIndex={currentStepIndex} />
 
             {step}
 
