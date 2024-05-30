@@ -27,12 +27,12 @@ multi-step-form-app/
 │   └── ...
 ├── src/
 │   ├── tests/
-│   │   ├── BankForm.tests.tsx
-│   │   ├── BusinessForm.tests.tsx
-│   │   ├── IndividualForm.tests.tsx
-│   │   ├── SuccessScreen.tests.tsx
-│   │   ├── WaitingScreen.tests.tsx
-│   │   ├── Stepper.tests.tsx
+│   │   ├── BankForm.spec.tsx
+│   │   ├── BusinessForm.spec.tsx
+│   │   ├── IndividualForm.spec.tsx
+│   │   ├── SuccessScreen.spec.tsx
+│   │   ├── WaitingScreen.spec.tsx
+│   │   ├── Stepper.spec.tsx
 │   │  
 │   ├── components/
 │   │   ├── BankForm.tsx
